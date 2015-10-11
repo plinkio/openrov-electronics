@@ -2,7 +2,8 @@ docs:
   - filename: "OpenROV Controller 2.8 Final Data Pkg/Gerber Files/OpenROV Controller 2.8.G2L"
     handler:
       name: "Gerber" # the step handler creates a part with type as the file name (if type is not specified)
-    type: "Inner Copper 2" # this is the vector "type" that will be created. 
+      config:
+        type: "Inner Copper 2" # this is the vector "type" that will be created. 
       
 # the assembly tree
 # instatiates assemblies and parts
