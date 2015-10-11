@@ -72,7 +72,7 @@ fabrications:
       - class: "assembly"
         type: "Top Stack"
 
-    fabricator:
+    handler:
       name: "pcb scad"
       config:
         stackup:
@@ -102,7 +102,7 @@ fabrications:
       - class: "assembly"
         type: "Bottom Stack"
 
-    fabricator:
+    handler:
       name: "pcb scad"
       config:
         npt-drill: "OpenROV 2.8 Controller Drill"
@@ -121,7 +121,7 @@ fabrications:
     outputs:
       - class: "part"
         type: "FR4 40mil Prepreg"
-    fabricator:
+    handler:
       name: "pcb scad"
       config:
         stackup:
