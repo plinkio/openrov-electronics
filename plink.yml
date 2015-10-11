@@ -21,7 +21,6 @@ assemblies:
     subassemblies:
       # std stackup for 4-layer http://www.4pcb.com/pcb-stack-ups-0.062.html
       - name: "Top stack"
-      - name: "Core"
       - name: "Bottom stack"
     parts:
       - name: "Core"
@@ -31,12 +30,12 @@ assemblies:
   - type: "Top stack"
     parts:
       - name: "Top Paste"
-        name: "Top Silk"
-        name: "Top Mask"
-        name: "Top Copper"
-        name: "FR4 2116"
-        name: "FR4 2116"
-        name: "Inner Copper 2"
+      - name: "Top Silk"
+      - name: "Top Mask"
+      - name: "Top Copper"
+      - name: "FR4 2116"
+      - name: "FR4 2116"
+      - name: "Inner Copper 2"
 
   - type: "Core"
     parts:
@@ -45,12 +44,12 @@ assemblies:
   - type: "Bottom Stack"
     parts:
       - name: "Inner Copper 3"
-        name: "FR4 2116"
-        name: "FR4 2116"
-        name: "Bottom Copper"
-        name: "Bottom Mask"
-        name: "Bottom Silk"
-        name: "Bottom Paste"
+      - name: "FR4 2116"
+      - name: "FR4 2116"
+      - name: "Bottom Copper"
+      - name: "Bottom Mask"
+      - name: "Bottom Silk"
+      - name: "Bottom Paste"
   
 # this is a list of fabrications. a fabrication take a part(s) or assembl(ies) (any thing that implments "cad.Thing") as an input and produces a Thing as an output.
 # examples would a piece of raw sheet plastic (from a source) and laser cut using a DXF file to produce a solid. (e.g. most of the pieces in the OpenROV cad)
