@@ -14,7 +14,6 @@ assemblies:
   - type: "OpenROV Controller 2.8"
     subassemblies:
       - name: "OpenROV Controller 2.8 PCB"
-        type: "pcb"
     parts: [] # will get filled in from BOM
 
     # stackup. layer data will be filled with a fab step. (silimar to how laser cut parts will work)
