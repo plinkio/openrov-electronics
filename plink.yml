@@ -74,7 +74,7 @@ fabrications:
 
     fabricator:
       name: "pcb scad"
-      params:
+      config:
         stackup:
           tpaste: "Top Paste"
           tsilk: "Top Silk"
@@ -104,7 +104,7 @@ fabrications:
 
     fabricator:
       name: "pcb scad"
-      params:
+      config:
         npt-drill: "OpenROV 2.8 Controller Drill"
         stackup:
           tpaste: "Top Paste"
@@ -123,7 +123,7 @@ fabrications:
         type: "FR4 40mil Prepreg"
     fabricator:
       name: "pcb scad"
-      params:
+      config:
         stackup:
           core:
             t: 40
