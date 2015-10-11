@@ -20,14 +20,14 @@ assemblies:
   - type: "OpenROV Controller 2.8 PCB"
     subassemblies:
       # std stackup for 4-layer http://www.4pcb.com/pcb-stack-ups-0.062.html
-      - name: "Top stack"
-      - name: "Bottom stack"
+      - name: "Top Stack"
+      - name: "Bottom Stack"
     parts:
       - name: "Core"
         type: "FR4 40mil Prepreg"
         
   # will need to fix this global namespace somehow...
-  - type: "Top stack"
+  - type: "Top Stack"
     parts:
       - name: "Top Paste"
       - name: "Top Silk"
