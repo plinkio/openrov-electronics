@@ -33,19 +33,19 @@ assemblies:
       - name: "Top Silk"
       - name: "Top Mask"
       - name: "Top Copper"
-      - name: "FR4 2116"
-      - name: "FR4 2116"
+      - name: "Sheet 1"
+        type: "FR4 2116"
+      - name: "Sheet 2"
+        type: "FR4 2116"
       - name: "Inner Copper 2"
-
-  - type: "Core"
-    parts:
-      - name: "FR4 40mil Prepreg"
         
   - type: "Bottom Stack"
     parts:
       - name: "Inner Copper 3"
-      - name: "FR4 2116"
-      - name: "FR4 2116"
+      - name: "Sheet 1"
+        type: "FR4 2116"
+      - name: "Sheet 2"
+        type: "FR4 2116"
       - name: "Bottom Copper"
       - name: "Bottom Mask"
       - name: "Bottom Silk"
