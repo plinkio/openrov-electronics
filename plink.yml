@@ -104,6 +104,7 @@ fabrications:
     fabricator:
       name: "pcb scad"
       params:
+        npt-drill: "OpenROV 2.8 Controller Drill"
         stackup:
           tpaste: "Top Paste"
           tsilk: "Top Silk"
