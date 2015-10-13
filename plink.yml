@@ -22,10 +22,8 @@ assemblies:
     subassemblies:
       # std stackup for 4-layer http://www.4pcb.com/pcb-stack-ups-0.062.html
       - name: "Top Stack"
+      - name: "FR4 40mil Pregreg"
       - name: "Bottom Stack"
-    parts:
-      - name: "Core"
-        type: "FR4 40mil Prepreg"
         
   # will need to fix this global namespace somehow...
   - type: "Top Stack"
@@ -39,6 +37,10 @@ assemblies:
       - name: "Sheet 2"
         type: "FR4 2116"
       - name: "Inner Copper 2"
+
+  - type: "FR4 40mill Prepreg"
+    parts:
+      - name: "Core"
         
   - type: "Bottom Stack"
     parts:
