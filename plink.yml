@@ -3,7 +3,19 @@ docs:
     handler:
       name: "Gerber" # the step handler creates a part with type as the file name (if type is not specified)
       config:
-        type: "Inner Copper 2" # this is the vector "type" that will be created. 
+        type: "Inner Copper 2" # this is the vector "type" that will be created.
+
+  - filename: "OpenROV Controller 2.8 Final Data Pkg/Gerber Files/OpenROV Controller 2.8.GTL"
+    handler:
+      name: "Gerber" # the step handler creates a part with type as the file name (if type is not specified)
+      config:
+        type: "Top Copper" # this is the vector "type" that will be created.
+
+  - filename: "OpenROV Controller 2.8 Final Data Pkg/Gerber Files/OpenROV Controller 2.8.GTO"
+    handler:
+      name: "Gerber" # the step handler creates a part with type as the file name (if type is not specified)
+      config:
+        type: "Top Silk" # this is the vector "type" that will be created. 
       
 # the assembly tree
 # instatiates assemblies and parts
