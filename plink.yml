@@ -7,16 +7,46 @@ docs:
 
   - filename: "OpenROV Controller 2.8 Final Data Pkg/Gerber Files/OpenROV Controller 2.8.GTL"
     handler:
-      name: "Gerber" # the step handler creates a part with type as the file name (if type is not specified)
+      name: "Gerber" 
       config:
-        type: "Top Copper" # this is the vector "type" that will be created.
+        type: "Top Copper" 
 
   - filename: "OpenROV Controller 2.8 Final Data Pkg/Gerber Files/OpenROV Controller 2.8.GTO"
     handler:
-      name: "Gerber" # the step handler creates a part with type as the file name (if type is not specified)
+      name: "Gerber" 
       config:
-        type: "Top Silk" # this is the vector "type" that will be created. 
-      
+        type: "Top Silk" 
+
+  - filename: "OpenROV Controller 2.8 Final Data Pkg/Gerber Files/OpenROV Controller 2.8.GTS"
+    handler:
+      name: "Gerber" 
+      config:
+        type: "Top Mask"
+
+  - filename: "OpenROV Controller 2.8 Final Data Pkg/Gerber Files/OpenROV Controller 2.8.G3L"
+    handler:
+      name: "Gerber" 
+      config:
+        type: "Inner Copper 3"
+
+  - filename: "OpenROV Controller 2.8 Final Data Pkg/Gerber Files/OpenROV Controller 2.8.GBL"
+    handler:
+      name: "Gerber" 
+      config:
+        type: "Bottom Copper"
+
+  - filename: "OpenROV Controller 2.8 Final Data Pkg/Gerber Files/OpenROV Controller 2.8.GBO"
+    handler:
+      name: "Gerber" 
+      config:
+        type: "Bottom Silk"
+
+  - filename: "OpenROV Controller 2.8 Final Data Pkg/Gerber Files/OpenROV Controller 2.8.GBS"
+    handler:
+      name: "Gerber" 
+      config:
+        type: "Bottom Mask"
+
 # the assembly tree
 # instatiates assemblies and parts
 tree:
@@ -40,7 +70,6 @@ assemblies:
   # will need to fix this global namespace somehow...
   - type: "Top Stack"
     parts:
-      - name: "Top Paste"
       - name: "Top Silk"
       - name: "Top Mask"
       - name: "Top Copper"
@@ -64,7 +93,6 @@ assemblies:
       - name: "Bottom Copper"
       - name: "Bottom Mask"
       - name: "Bottom Silk"
-      - name: "Bottom Paste"
   
 # this is a list of fabrications. a fabrication take a part(s) or assembl(ies) (any thing that implments "cad.Thing") as an input and produces a Thing as an output.
 # examples would a piece of raw sheet plastic (from a source) and laser cut using a DXF file to produce a solid. (e.g. most of the pieces in the OpenROV cad)
